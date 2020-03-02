@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    padding-left: 50px;
+    padding-right:50px;
+}
+  
+.column {
+    flex: 50%;
+}
