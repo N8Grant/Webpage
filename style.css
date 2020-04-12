@@ -16,6 +16,10 @@ html {
     width: 100%;
 }
 
+.proj_head {
+    color: rgb(19, 37, 53);
+}
+
 #my_name {
     color: rgb(255, 255, 255);
 }
@@ -54,7 +58,9 @@ html {
     flex: 50%;
 }
 #projects {
-    background: transparent;
+    background-image: linear-gradient(to top, rgb(207, 204, 204) 0%, rgb(207, 201, 201) 1%, #dfd3d3 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .prj_desc {
@@ -206,4 +212,44 @@ html {
   .demo:hover {
     opacity: 1;
   }
+
+#contact-header{
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: black;
+}
+
+#subject {
+    width: 90%;
+    height: 25px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+} 
+
+#message {
+    width: 90%;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+#send-button {
+    background-color: rgb(185, 29, 29);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
   

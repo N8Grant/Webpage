@@ -1,9 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-    </head>
-
-    <div id= "home_body">
+        <script src="contactme.js"></script>
+    </head>  
+    <div id="contact-me">
         <div class="header">
             <div id="Home" class="tabcontent">
                 <h1>Home</h1>
@@ -25,19 +25,11 @@
             <button class="tablink"><a href="aboutme.html">About Me</a></button>
             <button class="tablink" id="defaultOpen"><a href="index.html">Home</a></button> 
         </div>
-        
-        <div align="center">
-            <img id="my-pic" src='pic_of_me.jpg' alt="Picture of Me"align="center"></img>
-            <h1 id="my_name" align="center">
-                    Nathan Grant
-            </h1>
-        </div>
-        
-        <p align="center">Student at UMass Amherst | Computer Science and Statistics</p>
-        <div class="social_bar" align="center">
-            <a href="https://github.com/N8Grant"><img align="center" class="social" src='git-logo.png' alt="My Github" align="center"></img></a>
-            <a href="https://www.linkedin.com/in/nathan-c-grant/"><img align="center" class="social" src='Li-icon.png' alt="My LinkedIn" align="center"></img></a>
-        </div>
-        
+        <h1 id="contact-header">Contact Me</h1>
+        <h3 style="color: black;">Subject</h3><br>
+        <input type="text" id="subject" name="subject"><br>
+        <h3 style="color:black;">Message</h3><br>
+        <textarea id="message" name="message" placeholder="Put your message here..."></textarea><br><br>
+        <button id='send-button' onclick="sendEmail()">Send</button><br>
     </div>
 </html>

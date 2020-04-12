@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="style.css">
     </head>  
     <div id="project_body">
-        <div class="header">
+        <div class="header" style="background-image: url('proj_back.png');padding-bottom: 3%;">
             <div id="Home" class="tabcontent">
                 <h1>Home</h1>
             </div>
@@ -19,47 +19,55 @@
                 <h1>Contact Me</h1>
             </div>
             
-            <button class="tablink" ><a href="#Contact Me">Contact Me</a></button>
+            <button class="tablink" ><a href="contact.html">Contact Me</a></button>
             <button class="tablink" ><a href="projects.html">Projects</a></button>
             <button class="tablink"><a href="aboutme.html">About Me</a></button>
             <button class="tablink" id="defaultOpen"><a href="index.html">Home</a></button> 
+            <h1 align="center" style="color:rgb(168, 170, 172);padding-top: 50px;">Projects</h1>
         </div>
-        <div id="projects" align="center">
-            <h1>Projects</h1>
-            <div class ="row" align="center">
-                <div id="column" align="center">
-                    <h3 align="center">MNIST Skin Cancer Classifier</h3>
-                    <p class="prj_desc" align="center">This project uses a CNN to classify images of skin based </br>
-                        off wether or not they contain cancer. </br>
-                        <a class="Gitlink" href='https://github.com/N8Grant/Cancer-Classifier'>See it On GitHub</a></p>
-                    
-                </div>
-                <div id="column">
-                    <h3 align="center">Pacman DQN</h3>
-                    <p class="prj_desc" align="center">This project uses a Vanilla DQN to try to beat </br>
-                        the Atari 2600 game Ms Pacman. </br>
-                        <a class="Gitlink" href ='https://github.com/N8Grant/PacManRL'>See it On GitHub</a></p>
-                    
-                </div>
+ 
+        
+        
+        <div>
+            <div id="skin-proj" style="padding-top:5%;padding-bottom: 5%;padding-left: 15%;padding-right: 15%;">
+                <h3 class="proj_head" style="float:center;">MNIST Skin Cancer Classifier</h3>
+                <p class="prj_desc"  style="float:left;font-size: 14pt;">This project uses a CNN to classify images of skin based </br>
+                    off wether or not they contain cancer. The model uses two </br> convolutional layers and then two 
+                    fully connected layers. </br> The resulting model ended up gettin an accuracy of 79% on the test set. </br>
+                    In the future it might be worth using an autoencoder as the input so </br> that the input 
+                    dimension is a smaller size. </br>
+                    <a class="Gitlink" href='https://github.com/N8Grant/Cancer-Classifier'>See it On GitHub</a>
+                </p>     
+                <img src='skin.png' alt="Skin-Cancer Pic" style="float:right;height:200;width:300;"></img>
             </div>
-            <div class ="row">
-                <div id="column">
-                    <h3 align="center">N-Body Simulator</h3>
-                    <p class="prj_desc" align="center">This project simulates the isolated effect of gravity </br>
-                        on an N body system and then plots all of the bodies </br>
-                        through time.</br>
-                            <a class="Gitlink" href ='https://github.com/N8Grant/N-BodySimulator'>See it On GitHub</a></p>
-                    
-                </div>
-                <div id ="column">
-                    <h3 align="center">Kernel Density Estimator</h3>
-                    <p class="prj_desc" align="center">This project is a kernel density estimator which just uses </br>
-                        a gaussian distribution to approximate distributions. </br>
-                        <a class="Gitlink" href ='https://github.com/N8Grant/KernelDensityEstimator'>See it On GitHub</a></p>
-                    
-                </div>
+
+            <div id="pac-proj" style="padding-top:12%;padding-bottom: 5%;padding-left: 15%;padding-right: 15%;">
+
+                <h3 class="proj_head" style="float:center;">Pacman DQN</h3>
+                <p class="prj_desc" style="float:left;font-size: 14pt;">This project uses a Vanilla DQN to try to beat </br>
+                    the Atari 2600 game Ms Pacman. </br> The model uses teo convolutional layers and two fully connected layers. 
+                    </br>Using a replay buffer and a linearly decreaing epislon,  </br>the model was able to converge to beat the game after over 10,000 games.</br>
+                    <a class="Gitlink" href ='https://github.com/N8Grant/PacManRL'>See it On GitHub</a></p> 
             </div>
+
+            <div id="nbody-proj" style="padding-top:11%;padding-bottom: 5%;padding-left: 15%;padding-right: 15%;">           
+                <h3 class="proj_head" style="float:center;">N-Body Simulator</h3>
+                <p class="prj_desc" style="float:left;font-size: 14pt;">This project simulates the isolated effect of gravity </br>
+                    on an N body system and then plots all of the bodies </br>
+                    through time.</br>
+                <a class="Gitlink" href ='https://github.com/N8Grant/N-BodySimulator'>See it On GitHub</a></p>
+                
+            </div>
+            <div id="kde-proj" style="padding-top:10%;padding-bottom: 5%;padding-left: 15%;padding-right: 15%;">
+                <h3 class="proj_head" style="float:center;">Kernel Density Estimator</h3>
+                <p class="prj_desc" style="float:left;font-size: 14pt;">This project is a kernel density estimator which just uses </br>
+                    a gaussian distribution to approximate distributions. </br>
+                    <a class="Gitlink" href ='https://github.com/N8Grant/KernelDensityEstimator'>See it On GitHub</a></p>
+                
+            </div>
+            <br>
+            <br>
+            <br>
         </div>
-    </div>  
-    
+    </div>    
 </html>
