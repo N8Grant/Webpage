@@ -1,43 +1,39 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </head>
+    <header>
 
-    <div id= "home_body">
-        <div class="header">
-            <div id="Home" class="tabcontent">
-                <h1>Home</h1>
+    </header>
+    <body style="background-color:black;background-image: url(resources/stars.jpg);background-size: 100% 100%;">
+        <div class="row">
+            <div class="col">
+                    <button class="header-button" onclick="window.location.href ='contact.html' ">Contact Me</button>
+                    <button class="header-button" onclick="window.location.href ='aboutme.html' ">About Me</button>
+                    <button class="header-button" onclick="window.location.href ='projects.html' ">Projects</button>
+                    <button class="header-button" onclick="window.location.href ='index.html' ">Home</button>
             </div>
-            <div id="About Me" class="tabcontent">
-                <h1>About Me</h1>
-            </div>
-                    
-            <div id="Projects" class="tabcontent">
-                <h1>Projects</h1>
-            </div>
-                
-            <div id="Contact Me" class="tabcontent">
-                <h1>Contact Me</h1>
-            </div>
-            
-            <button class="tablink" ><a href="contact.html">Contact Me</a></button>
-            <button class="tablink" ><a href="projects.html">Projects</a></button>
-            <button class="tablink"><a href="aboutme.html">About Me</a></button>
-            <button class="tablink" id="defaultOpen"><a href="index.html">Home</a></button> 
         </div>
-        
-        <div align="center">
-            <img id="my-pic" src='pic_of_me.jpg' alt="Picture of Me"align="center"></img>
-            <h1 id="my_name" align="center">
-                    Nathan Grant
-            </h1>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col" style="text-align: center;">
+                <img id="my-pic" src='resources/image.jpg' alt="Picture of Me"style="height:400px; width:300px;border-radius: 50%;border:2px solid white;">
+                <h1 style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">Nathan Grant</h1>
+                <p style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">CS and Statistics Student at UMass Amhest insterested in pursuing Data Science</p>
+            </div>
+            <div class="col"></div>
         </div>
-        
-        <p align="center">Student at UMass Amherst | Computer Science and Statistics</p>
-        <div class="social_bar" align="center">
-            <a href="https://github.com/N8Grant"><img align="center" class="social" src='git-logo.png' alt="My Github" align="center"></img></a>
-            <a href="https://www.linkedin.com/in/nathan-c-grant/"><img align="center" class="social" src='Li-icon.png' alt="My LinkedIn" align="center"></img></a>
+        <div class="row">
+            <div class="col" align="center">
+                <a href="https://github.com/N8Grant"><img src='resources/git-logo.png' alt="My Github" style="height:50px;width:50px;"></img></a>
+                <a href="https://www.linkedin.com/in/nathan-c-grant/"><img src='resources/Li-icon.png' alt="My LinkedIn" style="height:50px;width:50px;"></img></a>
+            </div>
         </div>
-        
-    </div>
+    </body>
 </html>

@@ -1,0 +1,55 @@
+.header-button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:1%;
+    cursor: 
+    pointer;
+    color:white;
+    float: right;
+}
+
+#title {
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#subject {
+    width: 70%;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+} 
+
+#message {
+    width: 70%;
+    height: 75px;
+    resize: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+#send-button {
+    background-color: rgb(158, 158, 158);
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.input-text {
+    font-size: 14pt;
+    color: rgb(51, 51, 51);
+}
+
+span {
+    background: rgb(255, 251, 0);
+}
