@@ -1,0 +1,120 @@
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+}
+.section {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+    animation:video-background 2s 1;
+    -webkit-animation:video-background 2s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:1s;
+    -webkit-animation-delay:1s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+}
+
+.frontpage{
+    z-index: 2;
+    filter: opacity(0%);
+    height: 100%;
+    max-height: 100%;
+    animation:frontpage 2s 1;
+    -webkit-animation:frontpage 2s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:2s;
+    -webkit-animation-delay:2s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes frontpage{
+    from {filter : opacity(0%);}
+    to {filter : opacity(100%);}
+}
+
+@-webkit-keyframes frontpage{
+    from {filter : opacity(0%);}
+    to {filter : opacity(100%);}
+}
+
+@keyframes video-background{
+    from {filter : brightness(100%);}
+    to {filter : brightness(10%);}
+}
+
+@-webkit-keyframes video-background{
+    from {filter : brightness(100%);}
+    to {filter : brightness(10%);}
+}
+
+#leftSide {
+    top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(3,3,3,1) 0%, rgba(3,3,3,0.9416141456582633) 62%, rgba(255,255,255,0) 100%);
+}
+#myPic {
+    object-fit: cover;
+    width: 35%;
+    height: 250px;
+    
+    border-radius: 10%;
+
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+    box-shadow: 0 0 40px 40px #ffffff inset;
+    color:rgb(0, 0, 0);
+}

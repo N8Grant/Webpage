@@ -1,116 +1,131 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- Google Tag Manager -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128591677-2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-128591677-2');
-        </script>
-        <!-- End Google Tag Manager -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='resume.css'></link>
+        <style>
+            html,body {
+                max-width: 100%;
+                max-height: 100%;
+                overflow-x: hidden;
+                background:linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)), url("./resources/Galaxy_Moment.jpg");
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                scroll-behavior: smooth;
+            }
+            .topLinks {
+                float: left; 
+                padding-right: 4%;
+                text-decoration: none;
+                color: white;
+            }
+        </style>
     </head>
-    <body style="background-color: rgb(245, 245, 245);">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDCMKHN"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div style="background-image: url(resources/project-background.png)">
-            <div class="row">
-                    <div class="col">
-                            <button class="header-button" onclick="window.location.href ='contact.html' ">Contact Me</button>
-                            <button class="header-button" onclick="window.location.href ='aboutme.html' ">About Me</button>
-                            <button class="header-button" onclick="window.location.href ='projects.html' ">Projects</button>
-                            <button class="header-button" onclick="window.location.href ='index.html' ">Home</button>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col" style="text-align: center;">
-                        <h1 style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:50pt;">Projects</h1>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+    <body>
+        <div class='row'>
+            <div class='col'></div>
+            <div class='col-3'>
+                <a class='topLinks' href="./index.html"><h3>Home</h3></a>
+                <a class='topLinks' href='./resume.html'><h3>Resume</h3></a>
+                <a class='topLinks' href='./trips.html'><h3>Trips</h3></a>
+                <a class='topLinks' href='./beer_blog.html'><h3>Beer</h3></a>
+            </div>
         </div>
-        
-        <div class="row">
-            <div class="col" ></div>
-            <div class="col-8" style="background-color: rgb(255, 255, 255);">
-                <div class="row">
-                    <div class ="col-8">
-                        <br>
-                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;text-align: center;">Pacman DDQN</h1>
-                        <br>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;">In this project I used the Opan AI gym environment for Ms. Pacman to create a Double Deep Q-Learning Neural Net 
-                            (aka. DDQN). Initial implementations of the RL algorithm didnt work too well as the Neural Network was over estimating the 
-                            Q values for states and it plateaued fairly early. So to combat this I increased the buffer size and also implemented another 
-                            Neural Net to predict the Q values of each state. In order to avoid over-estimation I would take the highest Q value from each
-                            and then take the smallest of those two values to be the Q value approximation. Further improvements could include using 
-                            states for more than just the next timestep. Instead, I would use the unrolling technique to compute errors of Q values from 2-4 steps ahead.
-        
-                        </p>
-                        <br>
-                        <br>
+        <div class='row'>
+            <div class='col'></div>
+            <div class='col-10'>
+                <div class='row'>
+                    <div class='col'></div>
+                    <div class='col'>
+                        <h1 style='color: white;text-align: center; padding-top: 20%;'>Projects</h1>
                     </div>
-                    <div class ="col" style="text-align: center;">
-
-                        <img src='resources/pacmanpic.jpg' style="padding-top:40%;">
-                    </div>
+                    <div class='col'></div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                            <div class="embed-responsive embed-responsive-1by1">
-                                <iframe class="embed-responsive-item" src="resources/covid-sim.mp4"></iframe>
+                <div class='row' style='padding-top: 2%;'>
+                    <div class='col'></div>
+                    <div class='col-10'>
+                        <div class="card" style="width:300px; float: left;left: 11%;">
+                            <img class="card-img-top" src="./resources/amherst_watch_img.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Amherst Watch</h4>
+                              <p class="card-text">
+                                  Community safety webpage where users could anonomously report suspisious stalking behaviour that was frequently happening.
+                                  Website no longer up because free tier expired.
+                              </p>
+                              <a href="https://github.com/N8Grant/AmherstWatch" class="btn btn-primary">See GitHub</a>
                             </div>
+                        </div>
+                        <div class="card" style="width:300px; float: left; left: 16%;">
+                            <img class="card-img-top" src="./resources/mrs_pacman_project.jpg" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">PacMan RL</h4>
+                              <p class="card-text">
+                                  Made a Deep-Q network from scratch using TensorFlow and Open-AI gym. 
+                              </p>
+                              <a href="https://github.com/N8Grant/PacManRL" class="btn btn-primary">See GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:300px; float: left; left: 21%;">
+                            <img class="card-img-top" src="./resources/covid_project.jpg" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">COVID-19 Simulation</h4>
+                              <p class="card-text">
+                                  Scraped the web for number of cases in each county in the US in early days of the pandemic. Used numbers as initial conditions for a spatial SIR model.
+                              </p>
+                              <a href="https://github.com/N8Grant/COVID-19" class="btn btn-primary">See GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-7">
-                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;text-align: center;">Covid-19 Prediction</h1>
-                        <br>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;">
-                            In this project I used the John Hopkins Covid-19 data to try to predict the spread of the outbreak. Since county data wasnt 
-                            available I distributed cases according to population. I then used a spatial SIR model to predict the spreading of the disease.
-                            I included the effects of travel, favoring big cities, by giving some random probability that someone gets infected. I plan on accounting
-                            for lockdown by tapering off the probability of traveling infectors. I also plan on including hospital data to see which states might be at
-                            a particularly high risk due to number of cases w.r.t. to hospital beds.  
-                        </p>
-                    </div>
-
+                    <div class='col'></div>
                 </div>
-                <br>
-                <br>
-                <div class="row">
-                    <div class="col-7">
-                        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;text-align: center;">Cancer Classifier</h1>
-                        <br>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:black;">
-                            In this project I used a CNN to predict whether a picture of a skin lesion was cancerous or not using the MNIST-Skin cancer
-                            dataset. I was able to get about a 79% accuracy, however this can be further improved. Due to memory constraints I couldn't load all of the 
-                            pictures for training data, so only about 3/4 of the data was actually used. Another problem is that there was an imbalance in 
-                            the non-cancerous and cancerous classes. This makes it so that the classifier was trained to slelect the non-cancerous class because it was 
-                            the most probable. 
-                        </p>
+                <div class='row' style='padding-top: 2%;'>
+                    <div class='col'></div>
+                    <div class='col-10'>
+                        <div class="card" style="width:300px; float: left;left: 11%;">
+                            <img class="card-img-top" src="./resources/ctripods_project.jpg" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">TRIPODS REU</h4>
+                              <p class="card-text">
+                                  Undergrad research project exploring the role of gene expressions in the outcome and qualities of Uveal Melanoma. Found genes which had a significant contribution to negative outcomes in patients.
+                              </p>
+                              <a href="https://github.com/N8Grant/TripodsREU" class="btn btn-primary">See GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:300px; float: left; left: 16%;">
+                            <img class="card-img-top" src="./resources/movie_rec_project.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Movie Reccomendation</h4>
+                              <p class="card-text">
+                                  Created a reccomendation algorithm that outperformed ALS using SVD and finding an optimal weighted distance function between other points using gradient descent.
+                              </p>
+                              <a href="https://github.com/N8Grant/MovieReccomendation" class="btn btn-primary">See GitHub</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width:300px; float: left; left: 21%;">
+                            <img class="card-img-top" src="./resources/lazy_project.jpg" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Lazy Professor</h4>
+                              <p class="card-text">
+                                  Uses NLP and neural collabrative filtering in order to give users paper reccomendations to save time filtering through new research. Also can suggeest other users with similar interestes to collaberate with.
+                              </p>
+                              <a href="https://github.com/N8Grant/LazyProfessor" class="btn btn-primary">See GitHub</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src='resources/skin.png' style="padding-top:20%;height:300px;width:300px;padding-left: 4%;">
-                    </div>
+                    <div class='col'></div>
+                </div>
+                <div class='row' style='padding-top: 2%;'>
+                   
                 </div>
             </div>
-            <div class="col" ></div>
+            <div class='col'></div>
         </div>
     </body>
 </html>
